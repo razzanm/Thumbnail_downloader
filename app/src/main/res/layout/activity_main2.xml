@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="1dp"
     android:background="@android:color/holo_red_dark"
     tools:context=".Main2Activity">
 
     <ImageView
         android:id="@+id/thumbimg"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:background="@color/colorAccent"
          />
 
@@ -20,7 +20,9 @@
         android:id="@+id/dwnbtn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/btn_backgroung"
         android:text="download"
         android:textColor="#E5FA09"

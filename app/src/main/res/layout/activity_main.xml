@@ -1,56 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_red_dark"
     android:isScrollContainer="true"
-    android:nestedScrollingEnabled="true"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
 
-    <EditText
-        android:id="@+id/urltxt"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/bg_round"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="URL"
-        android:textAlignment="center"
-        android:textSize="20pt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="90dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
         android:background="@android:color/holo_blue_bright"
         android:text="Enter the youtube  video url(link)"
         android:textColor="#050C19"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/urltxt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/urltxt"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_round"
+        android:inputType="textPersonName"
+        android:text="URL"
+        android:textAlignment="center"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/clearbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/btn_backgroung"
         android:text="clear"
@@ -59,25 +45,19 @@
         android:textColorHighlight="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/urltxt" />
+       />
 
     <Button
         android:id="@+id/submitbtn"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/btn_backgroung"
         android:text="Submit"
         android:textColor="#DBEA0A"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/urltxt"
-        app:layout_constraintVertical_bias="0.432" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+</LinearLayout>
